@@ -160,7 +160,8 @@
 
   <footer>
     <p>
-      <a href="http://htmlacademy.ru" class="footer-link"><img src="img/htmlacademy-logo.png" alt="HTML Academy" width="130">Сделано в HTML Academy</a>в 2017 году
+      <a href="http://htmlacademy.ru" class="footer-link"><img src="img/htmlacademy-logo.png" alt="HTML Academy"
+          width="130">Сделано в HTML Academy</a>в 2017 году
     </p>
   </footer>
 
@@ -185,26 +186,21 @@
     var wizardSpeed = 3;
     var wizardWidth = 70;
 
-    var getFireballSpeed = function(left) {
-      if (left) {
-        return 5;
-      }
-      return 2;
+    var getFireballSpeed = function (left) {
+      return left ? 5 : 2;
     }
 
-    var getWizardHeight  = function() {
+    var getWizardHeight = function () {
       var wizardHeight = 1.337 * wizardWidth;
       return wizardHeight;
     }
 
-    var getWizardX  = function(width) {
-      var centerPlaingField = width / 2 - wizardWidth * 0.5;
-      return centerPlaingField;
+    var getWizardX = function (width) {
+      return width / 2 - wizardWidth / 2;
     }
 
-    var getWizardY  = function(height) {
-      var heightPlaingField = height / 3;
-      return heightPlaingField;
+    var getWizardY = function (height) {
+      return height / 3;
     }
   </script>
   <script src="js/game.js"></script>
